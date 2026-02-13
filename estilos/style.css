@@ -113,7 +113,7 @@ article {
 
 article h2 {
   color: var(--destaque);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .video-container {
   position: relative;
@@ -164,6 +164,37 @@ article h2 {
   height: 100%;
   background-color: var(--destaque-inverso);
   border-radius: 4px;
+}
+
+#graduation-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+#graduation-container .course {
+  background-color: var(--fundo-principal);
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  padding-left: 15px;
+  transition: border-width 0.35s, boder-color 0.35s;
+}
+
+#graduation-container .course:hover {
+  border-left-width: 15px;
+  border-color: var(--destaque);
+  cursor: pointer;
+}
+
+#graduation-container .period {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#graduation-container .institution {
+  color: var(--destaque-inverso);
+  font-size: 1.1em;
 }
 
 @media screen and (min-width: 768px) {
